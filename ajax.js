@@ -28,7 +28,7 @@ ig.module(
       return JSON.parse( this.get_sync(url) );
     },
 
-    post: function( url, callback, params ) {
+    post: function( url, params, callback ) {
       this.send( url, callback, 'POST', this.serialize(params) );
     },
 
